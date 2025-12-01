@@ -17,9 +17,10 @@ if platform.system() == "Windows":
         asyncio.set_event_loop(loop)
 
 from crewai import Crew, Process
-from .agents import get_new_agents
-from .tasks import get_new_tasks
-from ..database.models import MarketplaceDB
+from crew.agents import get_new_agents
+from crew.tasks import get_new_tasks
+from database.models import MarketplaceDB
+
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
